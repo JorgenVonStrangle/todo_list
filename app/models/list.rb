@@ -1,4 +1,4 @@
 class List < ActiveRecord::Base
-		validates :title precence: true
+		validates :title, presence: true
 		has_many :tasks, dependent: :destroy
 end
